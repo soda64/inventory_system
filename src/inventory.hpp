@@ -18,7 +18,7 @@ class Inventory
     public:
         void add_item(string name, int rate)
         {
-            if(v->size() == 100 || 0 < rate < 101)
+            if(v->size() == 100 || 0 > rate || rate > 100)
             {
                 cout << "NO" << endl;
             }
